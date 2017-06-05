@@ -53,10 +53,45 @@
 					<h2>Port Scan</h2>
 				</div>
 			</div>
-			<ul class="vertical menu">
-
-				<li><a href="#">Menu1</a></li>
-			</ul>
+			<div class="vertical menu">
+				<h2>Port selection <input type="Checkbox" id="fastscan"/> 
+					<label for="fastscan">Fast Scan</label>
+				</h2>
+				<h2>
+					<input type="Radio" id="ipprotocol" name="scantype"/> 				
+					<label for="ipprotocol" >IP protocol scan </label>
+				</h2>
+				<h2>
+					<input type="Radio" id="portscan" name="scantype"/> 				
+					<label for="portscan" >Port scan </label>
+				</h2>
+				
+				<h3>TCP Scan Type</h3>
+				<select name="TCP">
+				  <option value="syn">TCP Syn</option>
+				  <option value="connection">TCP Connection</option>				  
+				  <option value="null">TCP Null</option>
+				  <option value="fin">TCP Fin</option>
+				  <option value="xmas">TCP Xmas</option>				  
+				  <option value="ack">TCP Ack</option>
+				  <option value="window">TCP Window</option>
+				  <option value="maimon">TCP Maimon</option>				  
+				  <!-- <option value="idle">TCP Idle</option> -->
+				</select>
+				<input type="Checkbox" id="relay"/> 
+				<label for="relay">Enable FTP relay</label>
+				
+				<h3>UDP Scan </h3>				
+				<input type="Checkbox" id="udp"/> 
+				<label for="udp">Enable UDP scan</label>
+				
+				<h3>SCTP Scan Type</h3>
+				<select name="STCP">
+				  <option value="init">SCTP Init</option>
+				  <option value="cookie">SCTP Cookie Echo</option>
+				</select>
+				
+			</div>
 
 		</div>
 		<div class="off-canvas position-left" id="offCanvas2"
@@ -83,9 +118,9 @@
 					<h2>Script Scan</h2>
 				</div>
 			</div>
-			<ul class="vertical menu">
-				<li><a href="#">Menu3</a></li>
-			</ul>
+			<div class="vertical menu">
+				
+			</div>
 
 		</div>
 		<div class="off-canvas position-left" id="offCanvas4"
