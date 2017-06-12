@@ -164,10 +164,42 @@
 					<h2>Version/OS Information</h2>
 				</div>
 			</div>
-			<ul class="vertical menu">
-				<li><a href="#">Menu4</a></li>
-			</ul>
-
+			
+			<h2>
+				<input type="Checkbox" id="versiones"/>  				
+				<label for="versiones" >Version detection </label>
+			</h2>
+			
+			
+			<input type="Checkbox" id="versiones"/> 
+			<label for="versiones">Enable version detection</label>
+			<input type="Checkbox" id="9100"/> 
+			<label for="9100">Include port 9100 in scan</label>
+			
+			<input type="Radio" id="customintensity" name="intensity"/> 				
+			<label for="customintensity">Intensity</label>
+			<input type="number" id="customintensity" value="5" min="1" max="9"/>			
+			<input type="Radio" id="light" name="intensity"/> 				
+			<label for="light" >Light scan</label>
+			<input type="Radio" id="all" name="intensity"/> 				
+			<label for="all" >Heavy scan</label>
+			
+			<input type="Checkbox" id="vtrace"/> 
+			<label for="vtrace">Debug info</label>
+			
+			<h2>
+				<input type="Checkbox" id="os"/>  				
+				<label for="os" >OS detection </label>
+			</h2>
+			<input type="Checkbox" id="limit"/> 
+			<label for="limit">Limit OS scan</label>
+			<input type="Checkbox" id="fuzzy"/> 
+			<label for="fuzzy">Guess results</label>
+			<input type="Checkbox" id="maxtries"/> 			
+			<label for="maxtries">Max number of tries</label>
+			<input type="number" id="maxtriesinput" value="5" min="1"/>	
+			
+			
 		</div>
 		<div class="off-canvas position-left" id="offCanvas5"
 			data-off-canvas="true" data-close-on-click="false"
