@@ -136,15 +136,18 @@
 			</div>
 			<div class="vertical menu">
 				<ul class="tabs" data-tabs="true" id="example-tabs">
-				  <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Upload</a></li>
-				  <li class="tabs-title"><a href="#panel2">Run</a></li>
+				  <li class="tabs-title is-active"><a href="#panel1" aria-selected="true">Select</a></li>
+				  <li class="tabs-title"><a href="#panel2">Upload</a></li>
+				  <li class="tabs-title"><a href="#panel3">Run</a></li>				  
 				</ul>
 				<div class="tabs-content" data-tabs-content="example-tabs">
-				  <div class="tabs-panel is-active" id="panel1">
+				  <div class="tabs-panel" id="panel1">				  	
+				  </div>
+				  <div class="tabs-panel is-active" id="panel2">
 				  Script to upload:<input type="file" name="file" accept=".nse" />
 					<input type="submit" value="Upload" />
 				  </div>
-				  <div class="tabs-panel" id="panel2">
+				  <div class="tabs-panel" id="panel3">
 				  	<textarea rows="30" cols="50"></textarea>
 				  	<input type="button" value="Run script"/>
 				  </div>
@@ -175,9 +178,24 @@
 					<h2>Other Options</h2>
 				</div>
 			</div>
-			<ul class="vertical menu">
-				<li><a href="#">Menu5</a></li>
-			</ul>
+			<div class="vertical menu">
+				<ul class="tabs" data-tabs="true" id="example-tabs">
+				  <li class="tabs-title is-active"><a href="#panelO1" aria-selected="true">Output</a></li>
+				  <li class="tabs-title"><a href="#panelO2">Spoofing</a></li>
+				  <li class="tabs-title"><a href="#panelO3">Performance</a></li>
+				  <li class="tabs-title"><a href="#panelO4">Misc</a></li>				  
+				</ul>
+				<div class="tabs-content" data-tabs-content="example-tabs">
+				  <div class="tabs-panel is-active" id="panelO1">				 
+				  </div>
+				  <div class="tabs-panel" id="panelO2">
+				  </div>
+				  <div class="tabs-panel" id="panelO3">
+				  </div>
+				  <div class="tabs-panel" id="panelO4">
+				  </div>
+				</div>
+			</div>
 		</div>
 
 		<div class="off-canvas-content" data-off-canvas-content="true">
